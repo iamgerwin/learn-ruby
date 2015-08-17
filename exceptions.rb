@@ -20,7 +20,12 @@ end
 person = Iamgerwin::Person.new "Gerwin"
 
 begin
-  p person.name
+  raise ArgumentError, "Forcing exception! >:)"
+  p person
 rescue NoMethodError => e
   p "Oops! something wrong: #{e}"
+rescue ArgumentError => e
+  p "Oops! Args Error! #{e}"
+rescue => e
+  p "Generic Oops! #{e.class}"
 end
