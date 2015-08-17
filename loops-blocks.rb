@@ -1,4 +1,4 @@
-number = 0
+# number = 0
 #until, while, break if,
 # until number > 15 do
 #     puts "The number is #{number}"
@@ -23,17 +23,17 @@ number = 0
 # end
 
 def form &block
-  p "<form>"
+  puts "<form>"
   yield
-  p "</form>"
+  puts "</form>"
 end
 
 def paragraph text
-  p "<p>"+ text +"</p>"
+  puts "<p>"+ text +"</p>"
 end
 
 def qoute text
-  p "<blockqoute>"+ text +"</blockqoute>"
+  puts "<blockqoute>"+ text +"</blockqoute>"
 end
 
 form do

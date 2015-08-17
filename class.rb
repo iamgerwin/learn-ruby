@@ -27,7 +27,4 @@ class Person
     @name = name
     @birthdate = birthdate
   end
-  def age
-    :age = Time.now() -@birthdate
-  end
 end
