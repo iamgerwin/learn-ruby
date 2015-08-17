@@ -1,0 +1,11 @@
+# rake -T
+desc "Default task"
+task :default do
+  p "Default task!"
+end
+
+desc "Says hello"
+task :hello, [:name] do |task, arguments|
+  name = arguments[:name]
+  p "hello #{name}"
+end
