@@ -9,6 +9,5 @@ my_string.split
 my_string.strip!
 my_string.chop
 my_string.chomp
-my_string.include?
 
-my_string.split
+p my_string.split
